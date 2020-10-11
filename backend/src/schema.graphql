@@ -1,0 +1,18 @@
+type Query{
+    name: String!,
+    feed: [Post!]!
+}
+
+type Mutation {
+    post(id: Int, desc: String!): Post!
+
+    updatePost(id: Int!, desc: String!): Post
+
+    deletePost(id: Int!): Post
+}
+
+type Post {
+    id: Int,
+    desc: String!
+}
+
