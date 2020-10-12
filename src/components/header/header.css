@@ -1,0 +1,46 @@
+@media(min-width: 672px){
+    .header{
+        display: flex;
+        padding: 1% 15% 3% 3%;
+    }
+
+    .header-link{
+        display: inline;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 672px){
+
+    .header{
+        margin-left: 3%;
+    }
+
+    .header-link{
+        display: block;
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+
+    .header-link{
+        display: block;
+        margin-left: 0;
+    }
+}
+
+.header-link{
+    
+    font-weight: 300;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-links{
+    margin-left: auto;
+}
+

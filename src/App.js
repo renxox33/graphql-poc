@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route } from 'react-router-dom' 
+
+import Header from './components/header/Header'
+import CreatePost from './components/create-post/CreatePost'
 
 function App() {
   return (
-    <h1>
-      Hello
-    </h1>
+    <div>
+      <Header />
+      <Route exact path='/create' component={ CreatePost } />
+    </div>
+     
   );
 }
 
